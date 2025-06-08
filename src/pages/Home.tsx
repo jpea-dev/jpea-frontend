@@ -105,7 +105,7 @@ const Home: React.FC = () => {
                   academically while developing strong character and values."
                 </p>
                 <div className="text-sm text-gray-500">
-                  <p className="font-semibold">Dr. Priya Sharma</p>
+                  <p className="font-semibold">Mr. Amarendra Singh</p>
                   <p>Principal, JP Education Academy</p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
                   student life and academic delivery."
                 </p>
                 <div className="text-sm text-gray-500">
-                  <p className="font-semibold">Mr. Rajesh Kumar</p>
+                  <p className="font-semibold">Mr. Indra Kumar Gupta</p>
                   <p>Academic Manager, JP Education Academy</p>
                 </div>
               </div>
@@ -145,7 +145,7 @@ const Home: React.FC = () => {
                   citizens who will contribute positively to society."
                 </p>
                 <div className="text-sm text-gray-500">
-                  <p className="font-semibold">Mrs. Sunita Patel</p>
+                  <p className="font-semibold">Mrs. Radha Gupta</p>
                   <p>President, JP Education Academy</p>
                 </div>
               </div>
