@@ -1,35 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-
-interface CarouselSlide {
-  id: number;
-  image: string;
-  title: string;
-  description: string;
-}
+import siteConfig from '../config/siteConfig';
 
 const Carousel: React.FC = () => {
-  const slides: CarouselSlide[] = [
-    {
-      id: 1,
-      image: 'https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Excellence in Education',
-      description: 'Nurturing young minds with comprehensive learning programs and world-class facilities.'
-    },
-    {
-      id: 2,
-      image: 'https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Modern Learning Environment',
-      description: 'State-of-the-art classrooms equipped with the latest technology for enhanced learning experiences.'
-    },
-    {
-      id: 3,
-      image: 'https://images.pexels.com/photos/207756/pexels-photo-207756.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-      title: 'Holistic Development',
-      description: 'Fostering creativity, critical thinking, and character development in every student.'
-    }
-  ];
-
+  const slides = siteConfig.media.carousel;
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

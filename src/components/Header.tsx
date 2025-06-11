@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import siteConfig from '../config/siteConfig';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Academics', href: '/academics' },
-    { name: 'Admissions', href: '/admissions' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Mandatory Public Disclosure', href: '/mandatory-disclosure' }
-  ];
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -24,13 +16,19 @@ const Header: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center mb-2">
-              <GraduationCap className="h-16 w-16 sm:h-20 sm:w-20 text-primary-900 mr-4" />
+              <div className="mr-4">
+                <img 
+                  src={siteConfig.media.logo}
+                  alt={`${siteConfig.site.name} Logo`}
+                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-4 border-primary-200 shadow-lg object-cover"
+                />
+              </div>
               <div>
                 <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-900 font-serif tracking-tight">
-                  J.P. EDUCATION ACADEMY
+                  {siteConfig.site.name}
                 </h1>
                 <p className="text-sm sm:text-base text-primary-700 mt-1 font-medium">
-                  Excellence in Education Since Foundation
+                  {siteConfig.site.tagline}
                 </p>
               </div>
             </div>
@@ -44,7 +42,7 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center h-16">
             <div className="hidden md:block w-full">
               <div className="flex items-center justify-center space-x-1">
-                {navigation.map((item) => (
+                {siteConfig.navigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
@@ -76,7 +74,7 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-primary-800 border-t border-primary-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
+              {siteConfig.navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}

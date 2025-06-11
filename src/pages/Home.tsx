@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
 import { Eye, Target, Users, Award, BookOpen, Lightbulb } from 'lucide-react';
+import siteConfig from '../config/siteConfig';
 
 const Home: React.FC = () => {
   return (
@@ -10,10 +11,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-6xl font-bold text-primary-900 mb-4 animate-slide-up">
-              Welcome to JP Education Academy
+              Welcome to {siteConfig.site.name}
             </h1>
             <p className="text-xl md:text-2xl text-primary-700 font-medium animate-fade-in">
-              Empowering students with knowledge and excellence since our foundation
+              {siteConfig.site.description}
             </p>
           </div>
           <Carousel />
@@ -38,7 +39,7 @@ const Home: React.FC = () => {
                 <div
                   className="h-80 bg-cover bg-center"
                   style={{
-                    backgroundImage: `url('https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')`
+                    backgroundImage: `url('${siteConfig.media.aboutImages.vision}')`
                   }}
                 ></div>
                 <div className="absolute inset-0 flex items-center justify-center p-8">
@@ -46,8 +47,7 @@ const Home: React.FC = () => {
                     <Eye className="h-16 w-16 mx-auto mb-4 text-accent-300" />
                     <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                     <p className="text-lg leading-relaxed">
-                      To be a premier educational institution that nurtures innovative thinking, 
-                      ethical values, and global citizenship in every student we serve.
+                      {siteConfig.visionMission.vision}
                     </p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                 <div
                   className="h-80 bg-cover bg-center"
                   style={{
-                    backgroundImage: `url('https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')`
+                    backgroundImage: `url('${siteConfig.media.aboutImages.mission}')`
                   }}
                 ></div>
                 <div className="absolute inset-0 flex items-center justify-center p-8">
@@ -69,8 +69,7 @@ const Home: React.FC = () => {
                     <Target className="h-16 w-16 mx-auto mb-4 text-primary-300" />
                     <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                     <p className="text-lg leading-relaxed">
-                      To provide comprehensive, quality education that empowers students to achieve 
-                      academic excellence while developing strong moral character and leadership skills.
+                      {siteConfig.visionMission.mission}
                     </p>
                   </div>
                 </div>
@@ -93,61 +92,76 @@ const Home: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Principal's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
-              <div className="h-64 bg-gradient-to-br from-primary-500 to-primary-700"></div>
+              <div className="relative h-64">
+                <img 
+                  src={siteConfig.leadership.principal.photo}
+                  alt={siteConfig.leadership.principal.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="text-lg font-bold">{siteConfig.leadership.principal.name}</h4>
+                  <p className="text-sm opacity-90">{siteConfig.leadership.principal.title}</p>
+                </div>
+              </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <Users className="h-8 w-8 text-primary-600 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Principal's Desk</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  "Education is the foundation of progress. At JP Education Academy, we are committed to 
-                  providing an environment where every student can discover their potential and excel 
-                  academically while developing strong character and values."
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  "{siteConfig.leadership.principal.message}"
                 </p>
-                <div className="text-sm text-gray-500">
-                  <p className="font-semibold">Mr. Amarendra Singh</p>
-                  <p>Principal, JP Education Academy</p>
-                </div>
               </div>
             </div>
 
             {/* Manager's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
-              <div className="h-64 bg-gradient-to-br from-accent-500 to-accent-700"></div>
+              <div className="relative h-64">
+                <img 
+                  src={siteConfig.leadership.manager.photo}
+                  alt={siteConfig.leadership.manager.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="text-lg font-bold">{siteConfig.leadership.manager.name}</h4>
+                  <p className="text-sm opacity-90">{siteConfig.leadership.manager.title}</p>
+                </div>
+              </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <Award className="h-8 w-8 text-accent-600 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">Manager's Desk</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  "Our mission is to create a seamless educational experience by ensuring efficient 
-                  operations, excellent facilities, and continuous improvement in all aspects of 
-                  student life and academic delivery."
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  "{siteConfig.leadership.manager.message}"
                 </p>
-                <div className="text-sm text-gray-500">
-                  <p className="font-semibold">Mr. Indra Kumar Gupta</p>
-                  <p>Academic Manager, JP Education Academy</p>
-                </div>
               </div>
             </div>
 
             {/* President's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
-              <div className="h-64 bg-gradient-to-br from-green-500 to-green-700"></div>
+              <div className="relative h-64">
+                <img 
+                  src={siteConfig.leadership.president.photo}
+                  alt={siteConfig.leadership.president.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="text-lg font-bold">{siteConfig.leadership.president.name}</h4>
+                  <p className="text-sm opacity-90">{siteConfig.leadership.president.title}</p>
+                </div>
+              </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <Lightbulb className="h-8 w-8 text-green-600 mr-3" />
                   <h3 className="text-2xl font-bold text-gray-900">President's Desk</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  "Education is the most powerful tool for transformation. Our vision is to build 
-                  an institution that not only imparts knowledge but also shapes responsible 
-                  citizens who will contribute positively to society."
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  "{siteConfig.leadership.president.message}"
                 </p>
-                <div className="text-sm text-gray-500">
-                  <p className="font-semibold">Mrs. Radha Gupta</p>
-                  <p>President, JP Education Academy</p>
-                </div>
               </div>
             </div>
           </div>
@@ -158,7 +172,7 @@ const Home: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose JP Education Academy</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose {siteConfig.site.name}</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover what makes us the preferred choice for quality education
             </p>
