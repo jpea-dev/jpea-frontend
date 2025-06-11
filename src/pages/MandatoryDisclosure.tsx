@@ -1,216 +1,212 @@
 import React from 'react';
-import { FileText, Users, Building, Award, CheckCircle } from 'lucide-react';
+
+interface DocumentLink {
+  label: string;
+  url: string;
+}
+
+const docLinks: DocumentLink[] = [
+  {
+    label: 'Affiliation/Upgradation Letter & Extension',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/UPGRADATION-LETTERCERTIFIED.pdf',
+  },
+  {
+    label: 'Society/Trust Registration Certificate',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/RC-certified.pdf',
+  },
+  {
+    label: 'No Objection Certificate (NOC) - State Govt.',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/NOCCERTIFIED.pdf',
+  },
+  {
+    label: 'Recognition Certificate under RTE Act, 2009',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/RL-N-TO-8CERTIFIED.pdf',
+  },
+  {
+    label: 'Building Safety Certificate',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/NBCCERTIFIED.pdf',
+  },
+  {
+    label: 'Fire Safety Certificate',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/FIRE-NOC-INITIALCERTIFIEDN.pdf',
+  },
+  {
+    label: 'DEO Certificate for Affiliation/Upgradation',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/DEO-CERTIFICATECERTIFIED.pdf',
+  },
+  {
+    label: 'Water, Health & Sanitation Certificates',
+    url: 'https://www.jpeducationacademy.com/wp-content/uploads/2021/06/HEALTH-AND-SANITATIONCERTIFIED.pdf',
+  },
+];
+
+const academicsLinks: DocumentLink[] = [
+  {
+    label: 'Fee Structure',
+    url: 'http://www.jpeducationacademy.com/wp-content/uploads/2023/04/fee-structure-2023-24.pdf',
+  },
+  {
+    label: 'Annual Academic Calendar',
+    url: 'http://www.jpeducationacademy.com/wp-content/uploads/2023/04/annual-academic-calender-2023-24.pdf',
+  },
+  {
+    label: 'School Management Committee (SMC)',
+    url: 'http://www.jpeducationacademy.com/wp-content/uploads/2021/06/SMCCERTIFIED.pdf',
+  },
+  {
+    label: 'PTA Members List',
+    url: 'http://www.jpeducationacademy.com/wp-content/uploads/2021/06/PTACERTIFIED.pdf',
+  },
+  {
+    label: 'Last 3 Years Board Exam Results',
+    url: 'http://www.jpeducationacademy.com/wp-content/uploads/2023/04/last-3-years-results-2023-24.pdf',
+  },
+];
 
 const MandatoryDisclosure: React.FC = () => {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Hero Section */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Mandatory Public Disclosure</h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            In accordance with CBSE guidelines and transparency requirements, we provide complete 
-            information about our institution's policies, procedures, and administrative details.
-          </p>
-        </div>
-
-        {/* School Information */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-white p-8 rounded-2xl shadow-lg animate-slide-up">
-            <div className="flex items-center mb-6">
-              <Building className="h-8 w-8 text-primary-600 mr-3" />
-              <h2 className="text-2xl font-bold text-gray-900">School Information</h2>
-            </div>
-            <div className="space-y-4">
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">School Name:</span>
-                <span className="text-gray-600">JP Education Academy</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Affiliation No:</span>
-                <span className="text-gray-600">1234567</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">School Code:</span>
-                <span className="text-gray-600">12345</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Academic Session:</span>
-                <span className="text-gray-600">April - March</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Board:</span>
-                <span className="text-gray-600">CBSE</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-2xl shadow-lg animate-slide-up">
-            <div className="flex items-center mb-6">
-              <Users className="h-8 w-8 text-accent-600 mr-3" />
-              <h2 className="text-2xl font-bold text-gray-900">Management Details</h2>
-            </div>
-            <div className="space-y-4">
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Chairman:</span>
-                <span className="text-gray-600">Mr. J.P. Sharma</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Principal:</span>
-                <span className="text-gray-600">Dr. Priya Sharma</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Vice Principal:</span>
-                <span className="text-gray-600">Mr. Rajesh Kumar</span>
-              </div>
-              <div className="flex justify-between border-b pb-2">
-                <span className="font-medium text-gray-700">Academic Year:</span>
-                <span className="text-gray-600">2024-25</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Documents Section */}
-        <div className="mb-16 animate-slide-up">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Important Documents</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="h-12 w-12 text-primary-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">CBSE Affiliation Certificate</h3>
-              <p className="text-gray-600 mb-4">Official CBSE affiliation document and recognition certificate</p>
-              <button className="text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200">
-                Download PDF →
-              </button>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="h-12 w-12 text-accent-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Trust Registration</h3>
-              <p className="text-gray-600 mb-4">Society registration and trust deed documents</p>
-              <button className="text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-200">
-                Download PDF →
-              </button>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="h-12 w-12 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">NOC from State Government</h3>
-              <p className="text-gray-600 mb-4">No Objection Certificate from state education department</p>
-              <button className="text-green-600 font-semibold hover:text-green-700 transition-colors duration-200">
-                Download PDF →
-              </button>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Fee Structure</h3>
-              <p className="text-gray-600 mb-4">Detailed fee structure for all classes and academic year</p>
-              <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200">
-                Download PDF →
-              </button>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="h-12 w-12 text-purple-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Academic Calendar</h3>
-              <p className="text-gray-600 mb-4">Annual academic calendar with important dates and events</p>
-              <button className="text-purple-600 font-semibold hover:text-purple-700 transition-colors duration-200">
-                Download PDF →
-              </button>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <FileText className="h-12 w-12 text-indigo-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">School Policies</h3>
-              <p className="text-gray-600 mb-4">Comprehensive school policies and guidelines document</p>
-              <button className="text-indigo-600 font-semibold hover:text-indigo-700 transition-colors duration-200">
-                Download PDF →
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Infrastructure Details */}
-        <div className="bg-gray-50 rounded-3xl p-8 md:p-12 mb-16 animate-fade-in">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Infrastructure & Facilities</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building className="h-8 w-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Total Area</h3>
-              <p className="text-gray-600">5 Acres campus with modern infrastructure</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-accent-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-accent-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Classrooms</h3>
-              <p className="text-gray-600">40 well-ventilated and spacious classrooms</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Laboratories</h3>
-              <p className="text-gray-600">Science, Computer, and Language labs</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Library</h3>
-              <p className="text-gray-600">Well-stocked library with 10,000+ books</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Staff Information */}
-        <div className="animate-slide-up">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Staff Information</h2>
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold text-primary-600 mb-2">45</div>
-                <div className="text-xl font-semibold text-gray-900 mb-2">Teaching Staff</div>
-                <p className="text-gray-600">Qualified and experienced educators</p>
-              </div>
-
-              <div>
-                <div className="text-4xl font-bold text-accent-600 mb-2">15</div>
-                <div className="text-xl font-semibold text-gray-900 mb-2">Non-Teaching Staff</div>
-                <p className="text-gray-600">Administrative and support staff</p>
-              </div>
-
-              <div>
-                <div className="text-4xl font-bold text-green-600 mb-2">1200</div>
-                <div className="text-xl font-semibold text-gray-900 mb-2">Total Students</div>
-                <p className="text-gray-600">Enrolled across all classes</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Contact for More Information */}
-        <div className="mt-16 text-center bg-primary-900 text-white rounded-3xl p-8 md:p-12 animate-fade-in">
-          <h2 className="text-3xl font-bold mb-4">Need More Information?</h2>
-          <p className="text-xl mb-8 opacity-90">
-            For additional details or clarifications regarding our mandatory disclosures, please contact our administration office.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-accent-500 hover:bg-accent-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
-              Contact Administration
-            </button>
-            <button className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-900 text-white font-bold py-3 px-8 rounded-full transition-all duration-300">
-              Download All Documents
-            </button>
-          </div>
-        </div>
+    <div className="max-w-5xl mx-auto py-10 px-4">
+      {/* Header */}
+      <div className="mb-10 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">
+          Mandatory Public Disclosure
+        </h1>
+        <p className="text-gray-700">
+          (As per CBSE SARAS Portal Appendix-IX)
+        </p>
       </div>
+
+      {/* General Information */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4">A. General Information</h2>
+        <div className="bg-white shadow rounded-lg p-6">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <div className="mb-2"><span className="font-medium">School Name:</span> J P EDUCATION ACADEMY GURSAHAIGANJ KANNAUJ UP</div>
+              <div className="mb-2"><span className="font-medium">Affiliation No.:</span> 2132627</div>
+              <div className="mb-2"><span className="font-medium">School Code:</span> 70724</div>
+              <div className="mb-2"><span className="font-medium">Address:</span> J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209788</div>
+            </div>
+            <div>
+              <div className="mb-2"><span className="font-medium">Principal Name:</span> Amarendra Singh</div>
+              <div className="mb-2"><span className="font-medium">Principal Qualification:</span> M.A. B.ED.</div>
+              <div className="mb-2"><span className="font-medium">School Email ID:</span> jpeducationacadmeyghj@gmail.com</div>
+              <div className="mb-2"><span className="font-medium">Contact (Landline/Mobile):</span> 9838653719</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Documents and Information */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4">B. Documents and Information</h2>
+        <div className="bg-white shadow rounded-lg p-6">
+          <ul className="list-disc pl-5 space-y-2">
+            {docLinks.map((doc, idx) => (
+              <li key={idx}>
+                <a
+                  href={doc.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline hover:text-blue-900"
+                >
+                  {doc.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-xs text-gray-600">
+            Note: Uploads are self-attested by Chairman/Manager/Secretary and Principal. Non-genuine documents may attract action as per norms.
+          </p>
+        </div>
+      </section>
+
+      {/* Result and Academics */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4">C. Result and Academics</h2>
+        <div className="bg-white shadow rounded-lg p-6">
+          <ul className="list-disc pl-5 space-y-2">
+            {academicsLinks.map((doc, idx) => (
+              <li key={idx}>
+                <a
+                  href={doc.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline hover:text-blue-900"
+                >
+                  {doc.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Staff (Teaching) */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4">D. Staff (Teaching)</h2>
+        <div className="bg-white shadow rounded-lg p-6">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <div className="mb-2"><span className="font-medium">Principal:</span> ONE</div>
+              <div className="mb-2"><span className="font-medium">Total No. of Teachers:</span> 45</div>
+              <div className="mb-2"><span className="font-medium">PGT:</span> 13</div>
+              <div className="mb-2"><span className="font-medium">TGT:</span> 18</div>
+              <div className="mb-2"><span className="font-medium">PRT:</span> 14</div>
+              <div className="mb-2"><span className="font-medium">Teacher Section Ratio:</span> 1:5</div>
+            </div>
+            <div>
+              <div className="mb-2"><span className="font-medium">Special Educator:</span> Mr. Arun Kumar (B.A. B.Ed. Special Education)</div>
+              <div className="mb-2"><span className="font-medium">Counsellor & Wellness Teacher:</span> Ms. Sakshi (M.A. Psychology)</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Board Exam Results */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4">E. Board Exam Results</h2>
+        <div className="bg-white shadow rounded-lg p-6">
+          <div className="mb-4">
+            <span className="font-semibold text-gray-800 block mb-2">Class X (2022):</span>
+            <div className="text-gray-700">Registered: 159 | Passed: 157 | Pass %: 98.74%</div>
+          </div>
+          <div>
+            <span className="font-semibold text-gray-800 block mb-2">Class XII (2022):</span>
+            <div className="text-gray-700">Registered: 84 | Passed: 79 | Pass %: 94.04% <span className="text-xs text-gray-500">(1 Absent)</span></div>
+          </div>
+        </div>
+      </section>
+
+      {/* School Infrastructure */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4">F. School Infrastructure</h2>
+        <div className="bg-white shadow rounded-lg p-6">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <div className="mb-2"><span className="font-medium">Total Campus Area (sq. m):</span> 8326</div>
+              <div className="mb-2"><span className="font-medium">No. & Size of Classrooms (sq. m):</span> 25 & 46</div>
+              <div className="mb-2"><span className="font-medium">No. & Size of Labs (incl. Computer Labs) (sq. m):</span> 5 & 72</div>
+              <div className="mb-2"><span className="font-medium">Internet Facility:</span> YES</div>
+            </div>
+            <div>
+              <div className="mb-2"><span className="font-medium">No. of Girls Toilets:</span> 12</div>
+              <div className="mb-2"><span className="font-medium">No. of Boys Toilets:</span> 12</div>
+              <div className="mb-2">
+                <span className="font-medium">YouTube Video (Inspection):</span>{' '}
+                <a
+                  href="https://www.youtube.com/watch?v=i91PFqpKOUE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline hover:text-blue-900"
+                >
+                  Watch Here
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
