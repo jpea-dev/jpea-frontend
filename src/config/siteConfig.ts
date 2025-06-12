@@ -20,17 +20,20 @@ export const siteConfig = {
       line3: "Gursahaiganj, Kannauj",
       state: "Uttar Pradesh",
       pincode: "209625",
-      country: "India"
+      country: "India",
+      fullAddress: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209788"
     },
     phone: {
       main: "+91 98765 43210",
       admissions: "+91 98765 43211",
-      emergency: "+91 98765 43212"
+      emergency: "+91 98765 43212",
+      principal: "9838653719"
     },
     email: {
       general: "info@jpeducationacademy.edu",
       admissions: "admissions@jpeducationacademy.edu",
-      principal: "principal@jpeducationacademy.edu"
+      principal: "principal@jpeducationacademy.edu",
+      official: "jpeducationacadmeyghj@gmail.com"
     },
     officeHours: {
       weekdays: "Monday - Friday: 8:00 AM - 5:00 PM",
@@ -42,8 +45,8 @@ export const siteConfig = {
   // School Official Information
   official: {
     cbse: {
-      affiliationNo: "1234567",
-      schoolCode: "12345"
+      affiliationNo: "2132627",
+      schoolCode: "70724"
     },
     board: "CBSE",
     academicSession: "April - March",
@@ -59,8 +62,9 @@ export const siteConfig = {
       photo: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
     },
     principal: {
-      name: "Mr. Amarendra Singh",
+      name: "Amarendra Singh",
       title: "Principal",
+      qualification: "M.A. B.ED.",
       message: "Education is the foundation of progress. At JP Education Academy, we are committed to providing an environment where every student can discover their potential and excel academically while developing strong character and values.",
       photo: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
     },
@@ -119,8 +123,50 @@ export const siteConfig = {
     nonTeachingStaff: 15,
     totalStudents: 1200,
     totalArea: "5 Acres",
+    totalAreaSqM: 8326,
     classrooms: 40,
-    libraryBooks: 10000
+    classroomsSqM: 46,
+    libraryBooks: 10000,
+    labs: 5,
+    labsSqM: 72,
+    girlsToilets: 12,
+    boysToilets: 12,
+    internetFacility: true
+  },
+
+  // Staff Information
+  staffInfo: {
+    principal: 1,
+    totalTeachers: 45,
+    pgt: 13,
+    tgt: 18,
+    prt: 14,
+    teacherSectionRatio: "1:5",
+    specialEducator: {
+      name: "Mr. Arun Kumar",
+      qualification: "B.A. B.Ed. Special Education"
+    },
+    counsellor: {
+      name: "Ms. Sakshi",
+      qualification: "M.A. Psychology"
+    }
+  },
+
+  // Board Exam Results
+  examResults: {
+    classX: {
+      year: 2022,
+      registered: 159,
+      passed: 157,
+      passPercentage: 98.74
+    },
+    classXII: {
+      year: 2022,
+      registered: 84,
+      passed: 79,
+      passPercentage: 94.04,
+      absent: 1
+    }
   },
 
   // Academic Programs
@@ -322,39 +368,123 @@ export const siteConfig = {
     ]
   },
 
-  // Mandatory Disclosure Documents
-  mandatoryDocuments: [
-    {
-      name: "CBSE Affiliation Certificate",
-      description: "Official CBSE affiliation document and recognition certificate",
-      color: "primary"
+  // Mandatory Disclosure Information
+  mandatoryDisclosure: {
+    title: "Mandatory Public Disclosure",
+    subtitle: "(As per CBSE SARAS Portal Appendix-IX)",
+    description: "Complete transparency in school operations and compliance with CBSE regulations",
+    
+    generalInfo: {
+      schoolName: "J P EDUCATION ACADEMY GURSAHAIGANJ KANNAUJ UP",
+      affiliationNo: "2132627",
+      schoolCode: "70724",
+      address: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209788",
+      principalName: "Amarendra Singh",
+      principalQualification: "M.A. B.ED.",
+      schoolEmail: "jpeducationacadmeyghj@gmail.com",
+      contactNumber: "9838653719"
     },
-    {
-      name: "Trust Registration",
-      description: "Society registration and trust deed documents",
-      color: "accent"
+
+    documents: [
+      {
+        name: "CBSE Affiliation Certificate",
+        description: "Affiliation/Upgradation Letter & Extension",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/UPGRADATION-LETTERCERTIFIED.pdf",
+        category: "legal",
+        icon: "FileText"
+      },
+      {
+        name: "Trust Registration",
+        description: "Society/Trust Registration Certificate",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/RC-certified.pdf",
+        category: "legal",
+        icon: "Shield"
+      },
+      {
+        name: "NOC from State Government",
+        description: "No Objection Certificate (NOC) - State Govt.",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/NOCCERTIFIED.pdf",
+        category: "legal",
+        icon: "CheckCircle"
+      },
+      {
+        name: "RTE Recognition Certificate",
+        description: "Recognition Certificate under RTE Act, 2009",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/RL-N-TO-8CERTIFIED.pdf",
+        category: "legal",
+        icon: "Award"
+      },
+      {
+        name: "Building Safety Certificate",
+        description: "Building Safety Certificate",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/NBCCERTIFIED.pdf",
+        category: "safety",
+        icon: "Building"
+      },
+      {
+        name: "Fire Safety Certificate",
+        description: "Fire Safety Certificate",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/FIRE-NOC-INITIALCERTIFIEDN.pdf",
+        category: "safety",
+        icon: "Flame"
+      },
+      {
+        name: "DEO Certificate",
+        description: "DEO Certificate for Affiliation/Upgradation",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/DEO-CERTIFICATECERTIFIED.pdf",
+        category: "academic",
+        icon: "GraduationCap"
+      },
+      {
+        name: "Health & Sanitation",
+        description: "Water, Health & Sanitation Certificates",
+        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/HEALTH-AND-SANITATIONCERTIFIED.pdf",
+        category: "safety",
+        icon: "Heart"
+      }
+    ],
+
+    academicDocuments: [
+      {
+        name: "Fee Structure",
+        description: "Detailed fee structure for all classes and academic year",
+        url: "http://www.jpeducationacademy.com/wp-content/uploads/2023/04/fee-structure-2023-24.pdf",
+        icon: "DollarSign"
+      },
+      {
+        name: "Academic Calendar",
+        description: "Annual academic calendar with important dates and events",
+        url: "http://www.jpeducationacademy.com/wp-content/uploads/2023/04/annual-academic-calender-2023-24.pdf",
+        icon: "Calendar"
+      },
+      {
+        name: "School Management Committee",
+        description: "School Management Committee (SMC) details",
+        url: "http://www.jpeducationacademy.com/wp-content/uploads/2021/06/SMCCERTIFIED.pdf",
+        icon: "Users"
+      },
+      {
+        name: "PTA Members",
+        description: "Parent Teacher Association members list",
+        url: "http://www.jpeducationacademy.com/wp-content/uploads/2021/06/PTACERTIFIED.pdf",
+        icon: "UserCheck"
+      },
+      {
+        name: "Board Results",
+        description: "Last 3 years board examination results",
+        url: "http://www.jpeducationacademy.com/wp-content/uploads/2023/04/last-3-years-results-2023-24.pdf",
+        icon: "TrendingUp"
+      }
+    ],
+
+    inspectionVideo: {
+      title: "School Inspection Video",
+      description: "Official inspection video showcasing school facilities",
+      url: "https://www.youtube.com/watch?v=i91PFqpKOUE"
     },
-    {
-      name: "NOC from State Government",
-      description: "No Objection Certificate from state education department",
-      color: "green"
-    },
-    {
-      name: "Fee Structure",
-      description: "Detailed fee structure for all classes and academic year",
-      color: "blue"
-    },
-    {
-      name: "Academic Calendar",
-      description: "Annual academic calendar with important dates and events",
-      color: "purple"
-    },
-    {
-      name: "School Policies",
-      description: "Comprehensive school policies and guidelines document",
-      color: "indigo"
-    }
-  ],
+
+    disclaimer: "Note: Uploads are self-attested by Chairman/Manager/Secretary and Principal. Non-genuine documents may attract action as per norms."
+  },
 
   // FAQ Data
   faq: [
