@@ -7,8 +7,8 @@ export const siteConfig = {
     name: "J.P. EDUCATION ACADEMY",
     tagline: "Excellence in Education Since Foundation",
     description: "Empowering students with knowledge and excellence since our foundation",
-    domain: "jpeducationacademy.edu",
-    foundedYear: 1985,
+    domain: "www.jpeducationacademy.in",
+    foundedYear: 2005,
     currentYear: new Date().getFullYear(),
   },
 
@@ -19,25 +19,25 @@ export const siteConfig = {
       line2: "Indra Nagar, Tirwa Road",
       line3: "Gursahaiganj, Kannauj",
       state: "Uttar Pradesh",
-      pincode: "209625",
+      pincode: "209722",
       country: "India",
       fullAddress: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209788"
     },
     phone: {
-      main: "+91 98765 43210",
-      admissions: "+91 98765 43211",
-      emergency: "+91 98765 43212",
-      principal: "9838653719"
+      main: "+91 94503 78136",
+      admissions: "+91 78970 88115",
+      emergency: "+91 94503 78136",
+      principal: "+91 79858 67405"
     },
     email: {
-      general: "info@jpeducationacademy.edu",
-      admissions: "admissions@jpeducationacademy.edu",
-      principal: "principal@jpeducationacademy.edu",
+      general: "jpeducationacademyghj@gmail.com",
+      admissions: "jpeducationacadmeyghj@gmail.com",
+      principal: "ams042017@gmail.com",
       official: "jpeducationacadmeyghj@gmail.com"
     },
     officeHours: {
-      weekdays: "Monday - Friday: 8:00 AM - 5:00 PM",
-      saturday: "Saturday: 9:00 AM - 2:00 PM",
+      weekdays: "Monday - Saturday: 8:00 AM - 5:00 PM",
+      saturday: "Saturday: 8:00 AM - 5:00 PM",
       sunday: "Sunday: Closed"
     }
   },
@@ -50,7 +50,7 @@ export const siteConfig = {
     },
     board: "CBSE",
     academicSession: "April - March",
-    currentSession: "2024-25"
+    currentSession: "2025-26"
   },
 
   // Leadership Team
@@ -59,27 +59,27 @@ export const siteConfig = {
       name: "Mrs. Radha Gupta",
       title: "President",
       message: "Education is the most powerful tool for transformation. Our vision is to build an institution that not only imparts knowledge but also shapes responsible citizens who will contribute positively to society.",
-      photo: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      photo: "https://ik.imagekit.io/jpeaghj/jpea/precident.jpg?updatedAt=1749740545318"
     },
     principal: {
       name: "Amarendra Singh",
       title: "Principal",
       qualification: "M.A. B.ED.",
       message: "Education is the foundation of progress. At JP Education Academy, we are committed to providing an environment where every student can discover their potential and excel academically while developing strong character and values.",
-      photo: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      photo: "https://ik.imagekit.io/jpeaghj/jpea/principal.jpg?updatedAt=1749740548019"
     },
     manager: {
       name: "Mr. Indra Kumar Gupta",
       title: "Academic Manager",
       message: "Our mission is to create a seamless educational experience by ensuring efficient operations, excellent facilities, and continuous improvement in all aspects of student life and academic delivery.",
-      photo: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop"
+      photo: "https://ik.imagekit.io/jpeaghj/jpea/manager.jpg?updatedAt=1749740550079"
     },
     chairman: {
-      name: "Mr. J.P. Sharma",
+      name: "Mrs. Radha Gupta",
       title: "Chairman"
     },
     vicePrincipal: {
-      name: "Mr. Rajesh Kumar",
+      name: "Mr. Vijai Mishra",
       title: "Vice Principal"
     }
   },
@@ -116,10 +116,10 @@ export const siteConfig = {
 
   // Statistics and Achievements
   stats: {
-    yearsOfExcellence: 40,
-    alumniNetwork: 5000,
+    yearsOfExcellence: 20,
+    alumniNetwork: 1500,
     successRate: 95,
-    teachingStaff: 45,
+    teachingStaff: 60,
     nonTeachingStaff: 15,
     totalStudents: 1200,
     totalArea: "5 Acres",
@@ -239,17 +239,17 @@ export const siteConfig = {
     importantDates: [
       {
         event: "Application Opens",
-        date: "January 15, 2025",
+        date: "February 15, 2025",
         description: "Online and offline applications begin"
       },
       {
         event: "Application Deadline",
-        date: "March 31, 2025",
+        date: "July 15, 2025",
         description: "Last date for form submission"
       },
       {
         event: "Interviews",
-        date: "April 5-20, 2025",
+        date: "April 5 2025 - July 20, 2025",
         description: "Student and parent interactions"
       }
     ],
@@ -319,7 +319,7 @@ export const siteConfig = {
 
   // Images and Media
   media: {
-    logo: "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+    logo: "https://ik.imagekit.io/jpeaghj/jpea/schoollogo.png?updatedAt=1749740537537",
     carousel: [
       {
         id: 1,
@@ -375,14 +375,14 @@ export const siteConfig = {
     description: "Complete transparency in school operations and compliance with CBSE regulations",
     
     generalInfo: {
-      schoolName: "J P EDUCATION ACADEMY GURSAHAIGANJ KANNAUJ UP",
+      schoolName: "J.P. EDUCATION ACADEMY",
       affiliationNo: "2132627",
       schoolCode: "70724",
-      address: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209788",
+      address: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209722",
       principalName: "Amarendra Singh",
       principalQualification: "M.A. B.ED.",
       schoolEmail: "jpeducationacadmeyghj@gmail.com",
-      contactNumber: "9838653719"
+      contactNumber: "9450378136"
     },
 
     documents: [
