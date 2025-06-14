@@ -22,7 +22,7 @@ const About: React.FC = () => {
               <h2 className="text-3xl font-bold text-gray-900">Our History</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Founded in 1985, JP Education Academy began with a simple yet profound mission: to provide 
+              Founded in 2005, JP Education Academy began with a simple yet profound mission: to provide 
               quality education that nurtures both intellectual growth and moral character. Over the decades, 
               we have evolved into a comprehensive educational institution serving students from primary 
               through higher secondary levels.
@@ -91,19 +91,19 @@ const About: React.FC = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Achievements</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-primary-600 mb-2">40+</div>
+              <div className="text-4xl font-bold text-primary-600 mb-2">20+</div>
               <div className="text-xl font-semibold text-gray-900 mb-2">Years of Excellence</div>
               <p className="text-gray-600">Decades of providing quality education and shaping futures</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-accent-600 mb-2">5000+</div>
+              <div className="text-4xl font-bold text-accent-600 mb-2">1500+</div>
               <div className="text-xl font-semibold text-gray-900 mb-2">Alumni Network</div>
               <p className="text-gray-600">Proud graduates making their mark in various fields worldwide</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-green-600 mb-2">95%</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">98%</div>
               <div className="text-xl font-semibold text-gray-900 mb-2">Success Rate</div>
               <p className="text-gray-600">Consistent academic excellence and university placements</p>
             </div>

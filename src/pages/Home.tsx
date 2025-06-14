@@ -90,30 +90,31 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Principal's Desk */}
+            {/* President's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
               <div className="relative h-64">
                 <img 
-                  src={siteConfig.leadership.principal.photo}
-                  alt={siteConfig.leadership.principal.name}
+                  src={siteConfig.leadership.president.photo}
+                  alt={siteConfig.leadership.president.name}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-lg font-bold">{siteConfig.leadership.principal.name}</h4>
-                  <p className="text-sm opacity-90">{siteConfig.leadership.principal.title}</p>
+                  <h4 className="text-lg font-bold">{siteConfig.leadership.president.name}</h4>
+                  <p className="text-sm opacity-90">{siteConfig.leadership.president.title}</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <Users className="h-8 w-8 text-primary-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-900">Principal's Desk</h3>
+                  <Lightbulb className="h-8 w-8 text-green-600 mr-3" />
+                  <h3 className="text-2xl font-bold text-gray-900">President's Desk</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  "{siteConfig.leadership.principal.message}"
+                  "{siteConfig.leadership.president.message}"
                 </p>
               </div>
             </div>
+
 
             {/* Manager's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
@@ -140,31 +141,32 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* President's Desk */}
+            {/* Principal's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
               <div className="relative h-64">
                 <img 
-                  src={siteConfig.leadership.president.photo}
-                  alt={siteConfig.leadership.president.name}
+                  src={siteConfig.leadership.principal.photo}
+                  alt={siteConfig.leadership.principal.name}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-lg font-bold">{siteConfig.leadership.president.name}</h4>
-                  <p className="text-sm opacity-90">{siteConfig.leadership.president.title}</p>
+                  <h4 className="text-lg font-bold">{siteConfig.leadership.principal.name}</h4>
+                  <p className="text-sm opacity-90">{siteConfig.leadership.principal.title}</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <Lightbulb className="h-8 w-8 text-green-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-900">President's Desk</h3>
+                  <Users className="h-8 w-8 text-primary-600 mr-3" />
+                  <h3 className="text-2xl font-bold text-gray-900">Principal's Desk</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed text-sm">
-                  "{siteConfig.leadership.president.message}"
+                  "{siteConfig.leadership.principal.message}"
                 </p>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 

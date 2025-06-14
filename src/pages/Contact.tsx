@@ -23,8 +23,8 @@ const Contact: React.FC = () => {
             <h3 className="text-xl font-bold text-gray-900 mb-2">Address</h3>
             <p className="text-gray-600">
               JP Education Academy<br />
-              Education Street, Knowledge City<br />
-              State - 123456
+              Indra Nagar, Tirwa Road, Gursahaiganj, Kannauj<br />
+              Uttar Pradesh - 209722
             </p>
           </div>
 
@@ -34,9 +34,9 @@ const Contact: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
             <p className="text-gray-600">
-              Main Office: +91 98765 43210<br />
-              Admissions: +91 98765 43211<br />
-              Emergency: +91 98765 43212
+              Main Office: +91 94503 78136<br />
+              Admissions: +91 78970 8815<br />
+              Emergency: +91 79858 67405
             </p>
           </div>
 
@@ -46,9 +46,9 @@ const Contact: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
             <p className="text-gray-600">
-              General: info@jpeducationacademy.edu<br />
-              Admissions: admissions@jpeducationacademy.edu<br />
-              Principal: principal@jpeducationacademy.edu
+              General: jpeducationacademyghj@gmail.com<br />
+              Admissions: jpeducationacademyghj@gmail.com<br />
+              Principal: ams04207@gmail.com
             </p>
           </div>
 
@@ -58,8 +58,7 @@ const Contact: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Office Hours</h3>
             <p className="text-gray-600">
-              Monday - Friday: 8:00 AM - 5:00 PM<br />
-              Saturday: 9:00 AM - 2:00 PM<br />
+              Monday - Saturday: 8:00 AM - 4:00 PM<br />
               Sunday: Closed
             </p>
           </div>

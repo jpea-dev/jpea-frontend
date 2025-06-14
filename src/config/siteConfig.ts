@@ -62,7 +62,7 @@ export const siteConfig = {
       photo: "https://ik.imagekit.io/jpeaghj/jpea/precident.jpg?updatedAt=1749740545318"
     },
     principal: {
-      name: "Amarendra Singh",
+      name: "Mr. Amarendra Singh",
       title: "Principal",
       qualification: "M.A. B.ED.",
       message: "Education is the foundation of progress. At JP Education Academy, we are committed to providing an environment where every student can discover their potential and excel academically while developing strong character and values.",

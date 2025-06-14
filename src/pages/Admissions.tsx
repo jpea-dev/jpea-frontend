@@ -79,7 +79,7 @@ const Admissions: React.FC = () => {
             <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
               <Users className="h-12 w-12 text-green-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Interviews</h3>
-              <p className="text-gray-600 mb-2">April 5-20, 2025</p>
+              <p className="text-gray-600 mb-2">April 5, 2025 - July 15, 2025</p>
               <p className="text-sm text-gray-500">Student and parent interactions</p>
             </div>
           </div>
@@ -126,7 +126,7 @@ const Admissions: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">High School (Class 9-12)</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Higher & Senior Secondary School (Class 9-12)</h3>
               <ul className="space-y-3">
                 <li className="flex items-center text-gray-600">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
@@ -165,7 +165,7 @@ const Admissions: React.FC = () => {
               <Calendar className="h-6 w-6 text-accent-400 mr-3" />
               <div className="text-left">
                 <p className="font-semibold">Office Hours</p>
-                <p className="text-sm opacity-90">Mon-Fri: 9:00 AM - 5:00 PM</p>
+                <p className="text-sm opacity-90">Mon-Sat: 8:00 AM - 4:00 PM</p>
               </div>
             </div>
 
