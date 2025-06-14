@@ -103,7 +103,7 @@ const About: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-green-600 mb-2">98%</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">97%</div>
               <div className="text-xl font-semibold text-gray-900 mb-2">Success Rate</div>
               <p className="text-gray-600">Consistent academic excellence and university placements</p>
             </div>
