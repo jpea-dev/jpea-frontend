@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                 <img 
                   src={siteConfig.media.logo}
                   alt={`${siteConfig.site.name} Logo`}
-                  className="h-20 w-20 sm:h-20 sm:w-20 object-cover"/>
+                  className="h-20 w-20 sm:h-20 sm:w-20 object-contain"/>
               </div>
               <div>
                 <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-900 font-serif tracking-tight">
