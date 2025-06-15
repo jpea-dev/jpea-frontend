@@ -7,18 +7,18 @@ const config = {
   NODE_ENV: process.env.NODE_ENV || 'development',
   
   // Database Configuration
-  MONGO_URI: process.env.MONGO_URI || 'mongodb://localhost:27017/jpea_db',
+  MONGO_URI: process.env.MONGO_URI || 'mongodb+srv://notebookjpea:m@DB#70724@cluster0.wbtr5b1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
   
   // JWT Configuration
   JWT_SECRET: process.env.JWT_SECRET || 'fallback_secret_key_change_in_production',
   JWT_EXPIRE: process.env.JWT_EXPIRE || '7d',
   
   // Frontend Configuration
-  FRONTEND_URL: process.env.FRONTEND_URL || 'http://localhost:3000',
+  FRONTEND_URL: process.env.FRONTEND_URL || 'https://www.jpeducationacademy.in',
   
   // Admin Configuration
-  ADMIN_WHATSAPP: process.env.ADMIN_WHATSAPP || '+919450378136',
-  ADMIN_PHONE: process.env.ADMIN_PHONE || '9450378136',
+  ADMIN_WHATSAPP: process.env.ADMIN_WHATSAPP || '+919140271174',
+  ADMIN_PHONE: process.env.ADMIN_PHONE || '9140271174',
   
   // User Roles
   ROLES: {
@@ -60,7 +60,7 @@ const config = {
   
   // Default Admin Credentials
   DEFAULT_ADMIN: {
-    mobile: '9450378136',
+    mobile: '9140271174',
     password: 'admin123',
     name: 'System Administrator',
     email: 'admin@jpeducationacademy.in'
@@ -83,7 +83,7 @@ const config = {
   
   // WhatsApp Integration
   WHATSAPP: {
-    ADMIN_LINK: `https://wa.me/${process.env.ADMIN_WHATSAPP?.replace('+', '') || '919450378136'}`,
+    ADMIN_LINK: `https://wa.me/${process.env.ADMIN_WHATSAPP?.replace('+', '') || '919140271174'}`,
     PASSWORD_RESET_MESSAGE: 'Hello, I need help resetting my password for JP Education Academy portal. My details are:'
   },
   
