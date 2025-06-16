@@ -138,7 +138,7 @@ const Login: React.FC = () => {
             <p className="text-sm text-gray-600">
               Need help? {' '}
               <a 
-                href={`https://wa.me/${siteConfig.contact.phone.main.replace(/[^0-9]/g, '')}`}
+                href={`https://wa.me/${siteConfig.contact.phone.admin.replace(/[^0-9]/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-primary-600 hover:text-primary-500"
