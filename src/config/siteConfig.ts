@@ -24,6 +24,7 @@ export const siteConfig = {
       fullAddress: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209788"
     },
     phone: {
+      admin: "+91 91402 71174",
       main: "+91 94503 78136",
       admissions: "+91 78970 88115",
       emergency: "+91 94503 78136",
