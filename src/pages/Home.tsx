@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel';
-import { Eye, Target, Users, Award, BookOpen, Lightbulb } from 'lucide-react';
+import { Eye, Target, Users, Award, BookOpen, Lightbulb, LogIn } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
 import siteConfig from '../config/siteConfig';
 
 const Home: React.FC = () => {
+  const { user } = useAuth();
+
   return (
     <div className="space-y-0">
       {/* Hero Section with Carousel */}
@@ -13,9 +17,27 @@ const Home: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-primary-900 mb-4 animate-slide-up">
               Welcome to {siteConfig.site.name}
             </h1>
-            <p className="text-xl md:text-2xl text-primary-700 font-medium animate-fade-in">
+            <p className="text-xl md:text-2xl text-primary-700 font-medium animate-fade-in mb-6">
               {siteConfig.site.description}
             </p>
+            
+            {/* Dashboard Button */}
+            {user ? (
+              <Link
+                to="/dashboard"
+                className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-accent-600 hover:bg-accent-700 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-subtle"
+              >
+                Go to Dashboard
+              </Link>
+            ) : (
+              <Link
+                to="/login"
+                className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-accent-600 hover:bg-accent-700 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-subtle"
+              >
+                <LogIn className="h-6 w-6 mr-3" />
+                Student/Teacher Login
+              </Link>
+            )}
           </div>
           <Carousel />
         </div>
@@ -115,7 +137,6 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-
             {/* Manager's Desk */}
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden animate-slide-up">
               <div className="relative h-64">
@@ -166,7 +187,6 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
