@@ -130,9 +130,6 @@ const Login: React.FC = () => {
             </button>
           </form>
 
-            </div>
-          </div>
-
           {/* Help Links */}
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
