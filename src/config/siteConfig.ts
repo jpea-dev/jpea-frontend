@@ -118,14 +118,14 @@ export const siteConfig = {
   // Statistics and Achievements
   stats: {
     yearsOfExcellence: 20,
-    alumniNetwork: 1500,
+    alumniNetwork: 100,
     successRate: 95,
     teachingStaff: 60,
     nonTeachingStaff: 15,
     totalStudents: 1200,
     totalArea: "5 Acres",
     totalAreaSqM: 8326,
-    classrooms: 40,
+    classrooms: 47,
     classroomsSqM: 46,
     libraryBooks: 10000,
     labs: 5,
@@ -144,11 +144,11 @@ export const siteConfig = {
     prt: 14,
     teacherSectionRatio: "1:5",
     specialEducator: {
-      name: "Mr. Arun Kumar",
+      name: "Mr. Rahul Kumar",
       qualification: "B.A. B.Ed. Special Education"
     },
     counsellor: {
-      name: "Ms. Sakshi",
+      name: "Ms. Archana Chaturvedi",
       qualification: "M.A. Psychology"
     }
   },
@@ -381,7 +381,7 @@ export const siteConfig = {
       schoolCode: "70724",
       address: "J P EDUCATION ACADEMY, VILL UNCHA PARGANA TALGRAM TIRWA RD, NR POWER HOUSE GURSAHAIGANJ, KANNAUJ, - 209722",
       principalName: "Amarendra Singh",
-      principalQualification: "M.A. B.ED.",
+      principalQualification: "M.A. B.Ed. M.B.A.",
       schoolEmail: "jpeducationacadmeyghj@gmail.com",
       contactNumber: "9450378136"
     },
