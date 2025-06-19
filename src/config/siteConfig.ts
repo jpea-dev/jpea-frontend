@@ -390,7 +390,7 @@ export const siteConfig = {
       {
         name: "CBSE Affiliation Certificate",
         description: "Affiliation/Upgradation Letter & Extension",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/UPGRADATION-LETTERCERTIFIED.pdf",
+        url: "https://drive.google.com/file/d/1K4MwTv0-8KIsN_CHhLrVTN2qPVElJ3b7/view?usp=sharing",
         category: "legal",
         icon: "FileText"
       },
