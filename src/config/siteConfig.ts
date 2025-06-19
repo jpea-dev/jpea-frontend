@@ -390,7 +390,7 @@ export const siteConfig = {
       {
         name: "CBSE Affiliation Certificate",
         description: "Affiliation/Upgradation Letter & Extension",
-        url: "https://drive.google.com/file/d/1K4MwTv0-8KIsN_CHhLrVTN2qPVElJ3b7/view?usp=sharing",
+        url: "https://knowledgelavenir-my.sharepoint.com/:b:/g/personal/pc_70724_carte-blanche_cc/EXqOqukYNJ5PsHyAsT3XNkABJcLMxfvTDwdKyqHPOmLCFg?e=qKvdnr",
         category: "legal",
         icon: "FileText"
       },
