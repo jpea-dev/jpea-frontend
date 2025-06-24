@@ -166,7 +166,7 @@ export const siteConfig = {
       registered: 128,
       passed: 84,
       passPercentage: 65.62,
-      absent:  0
+      absent: 0
     }
   },
 
