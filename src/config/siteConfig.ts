@@ -156,17 +156,17 @@ export const siteConfig = {
   // Board Exam Results
   examResults: {
     classX: {
-      year: 2022,
-      registered: 159,
-      passed: 157,
-      passPercentage: 98.74
+      year: 2025,
+      registered: 143,
+      passed: 135,
+      passPercentage: 94.40
     },
     classXII: {
-      year: 2022,
-      registered: 84,
-      passed: 79,
-      passPercentage: 94.04,
-      absent: 1
+      year: 2025,
+      registered: 128,
+      passed: 84,
+      passPercentage: 65.62,
+      absent: 0
     }
   },
 
