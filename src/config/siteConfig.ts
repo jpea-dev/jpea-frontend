@@ -138,10 +138,12 @@ export const siteConfig = {
   // Staff Information
   staffInfo: {
     principal: 1,
-    totalTeachers: 45,
-    pgt: 13,
-    tgt: 18,
-    prt: 14,
+    totalTeachers: 56,
+    pgt: 16,
+    tgt: 20,
+    prt: 8,
+    ntt: 5,
+    pti: 2,
     teacherSectionRatio: "1:5",
     specialEducator: {
       name: "Mr. Rahul Kumar",

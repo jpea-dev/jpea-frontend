@@ -206,7 +206,7 @@ const MandatoryDisclosure: React.FC = () => {
               </div>
               <div className="text-3xl font-bold text-primary-600 mb-2">{staffInfo.totalTeachers}</div>
               <div className="text-lg font-semibold text-gray-900 mb-1">Total Teachers</div>
-              <p className="text-sm text-gray-600">PGT: {staffInfo.pgt} | TGT: {staffInfo.tgt} | PRT: {staffInfo.prt}</p>
+              <p className="text-sm text-gray-600">PGT: {staffInfo.pgt} | TGT: {staffInfo.tgt} | PRT: {staffInfo.prt} | NTT: {staffInfo.ntt} | PTI: {staffInfo.pti}</p>
             </div>
 
             <div className="bg-white p-6 rounded-2xl shadow-lg text-center">
