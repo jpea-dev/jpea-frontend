@@ -65,7 +65,7 @@ export const siteConfig = {
     principal: {
       name: "Mr. Amarendra Singh",
       title: "Principal",
-      qualification: "M.A. B.ED.",
+      qualification: "M.A. B.ED. M.B.A.",
       message: "Education is the foundation of progress. At JP Education Academy, we are committed to providing an environment where every student can discover their potential and excel academically while developing strong character and values.",
       photo: "https://ik.imagekit.io/jpeaghj/jpea/principal.jpg?updatedAt=1749740548019"
     },
@@ -383,63 +383,63 @@ export const siteConfig = {
       principalName: "Amarendra Singh",
       principalQualification: "M.A. B.Ed. M.B.A.",
       schoolEmail: "jpeducationacadmeyghj@gmail.com",
-      contactNumber: "9450378136"
+      contactNumber: "9838653719"
     },
 
     documents: [
       {
         name: "CBSE Affiliation Certificate",
         description: "Affiliation/Upgradation Letter & Extension",
-        url: "https://knowledgelavenir-my.sharepoint.com/:b:/g/personal/pc_70724_carte-blanche_cc/EXqOqukYNJ5PsHyAsT3XNkABJcLMxfvTDwdKyqHPOmLCFg?e=qKvdnr",
+        url: "https://ik.imagekit.io/jpeaghj/docs/extension_upgradation.pdf",
         category: "legal",
         icon: "FileText"
       },
       {
         name: "Trust Registration",
         description: "Society/Trust Registration Certificate",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/RC-certified.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/society_certificate.pdf",
         category: "legal",
         icon: "Shield"
       },
       {
         name: "NOC from State Government",
         description: "No Objection Certificate (NOC) - State Govt.",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/NOCCERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/noc_certificate.pdf",
         category: "legal",
         icon: "CheckCircle"
       },
       {
         name: "RTE Recognition Certificate",
         description: "Recognition Certificate under RTE Act, 2009",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/RL-N-TO-8CERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/recognition_certificate.pdf",
         category: "legal",
         icon: "Award"
       },
       {
-        name: "Building Safety Certificate",
+        name: "National Building Safety Certificate",
         description: "Building Safety Certificate",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/NBCCERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/nbc.pdf",
         category: "safety",
         icon: "Building"
       },
       {
         name: "Fire Safety Certificate",
         description: "Fire Safety Certificate",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/FIRE-NOC-INITIALCERTIFIEDN.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/fire_safety.pdf",
         category: "safety",
         icon: "Flame"
       },
       {
         name: "DEO Certificate",
         description: "DEO Certificate for Affiliation/Upgradation",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/DEO-CERTIFICATECERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/deo_certificate.pdf",
         category: "academic",
         icon: "GraduationCap"
       },
       {
         name: "Health & Sanitation",
         description: "Water, Health & Sanitation Certificates",
-        url: "https://www.jpeducationacademy.com/wp-content/uploads/2021/06/HEALTH-AND-SANITATIONCERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/safe_drinking_water_sanitation.pdf",
         category: "safety",
         icon: "Heart"
       }
@@ -449,31 +449,31 @@ export const siteConfig = {
       {
         name: "Fee Structure",
         description: "Detailed fee structure for all classes and academic year",
-        url: "http://www.jpeducationacademy.com/wp-content/uploads/2023/04/fee-structure-2023-24.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/fee_structure.pdf",
         icon: "DollarSign"
       },
       {
         name: "Academic Calendar",
         description: "Annual academic calendar with important dates and events",
-        url: "http://www.jpeducationacademy.com/wp-content/uploads/2023/04/annual-academic-calender-2023-24.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/annual_ac_calendar.pdf",
         icon: "Calendar"
       },
       {
         name: "School Management Committee",
         description: "School Management Committee (SMC) details",
-        url: "http://www.jpeducationacademy.com/wp-content/uploads/2021/06/SMCCERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/smc.pdf",
         icon: "Users"
       },
       {
         name: "PTA Members",
         description: "Parent Teacher Association members list",
-        url: "http://www.jpeducationacademy.com/wp-content/uploads/2021/06/PTACERTIFIED.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/pta.pdf",
         icon: "UserCheck"
       },
       {
         name: "Board Results",
         description: "Last 3 years board examination results",
-        url: "http://www.jpeducationacademy.com/wp-content/uploads/2023/04/last-3-years-results-2023-24.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/result_3yrs.pdf",
         icon: "TrendingUp"
       }
     ],
