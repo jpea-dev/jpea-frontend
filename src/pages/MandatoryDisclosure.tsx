@@ -71,7 +71,7 @@ const MandatoryDisclosure: React.FC = () => {
         </div>
 <div>
 <a
-href = "https://ik.imagekit.io/jpeaghj/docs/mpd_saras.pdf"
+href = "/mpd_saras.pdf"
   target="_blank"
   rel="noopener noreferrer"
   style={{
