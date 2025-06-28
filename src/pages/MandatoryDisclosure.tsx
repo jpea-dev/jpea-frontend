@@ -69,6 +69,25 @@ const MandatoryDisclosure: React.FC = () => {
             {mandatoryDisclosure.description}
           </p>
         </div>
+<div>
+<a
+href = "https://ik.imagekit.io/jpeaghj/docs/mpd_saras.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: 'inline-block',
+    padding: '10px 24px',
+    background: '#1976d2',
+    color: '#fff',
+    borderRadius: '6px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    margin: '16px 0'
+  }}
+>
+  Mandatory Public Disclosure
+</a>
+</div>
 
         {/* General Information */}
         <section className="mb-16 animate-slide-up">
