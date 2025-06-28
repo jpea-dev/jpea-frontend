@@ -413,7 +413,7 @@ export const siteConfig = {
       {
         name: "RTE Recognition Certificate",
         description: "Recognition Certificate under RTE Act, 2009",
-        url: "https://ik.imagekit.io/jpeaghj/docs/recognition_certificate.pdf",
+        url: "https://ik.imagekit.io/jpeaghj/docs/recognition_and_renewal.pdf",
         category: "legal",
         icon: "Award"
       },
