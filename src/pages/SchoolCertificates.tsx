@@ -25,8 +25,16 @@ const SchoolCertificates: React.FC = () => {
     {
       id: 'land-certificate',
       name: 'Land Certificate',
-      description: 'Land ownership and property documentation certificate',
-      pdfPath: '/land_certificate_renewal.pdf',
+      description: 'Original land ownership and property documentation certificate',
+      pdfPath: '/land_certificate.pdf', // <-- This is your original land certificate
+      icon: Building,
+      color: 'green'
+    },
+    {
+      id: 'land-certificate-renewal',
+      name: 'Land Certificate Renewal',
+      description: 'Renewal of land ownership and property documentation certificate',
+      pdfPath: '/land_certificate_renewal.pdf', // <-- This is your renewal certificate
       icon: Building,
       color: 'green'
     },

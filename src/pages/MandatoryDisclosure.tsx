@@ -55,14 +55,6 @@ const MandatoryDisclosure: React.FC = () => {
             <Eye className="h-3 w-3 mr-1" />
             View
           </a>
-          <a 
-            href={url} 
-            download
-            className="inline-flex items-center px-3 py-2 text-xs font-medium text-green-600 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 hover:border-green-300 transition-all duration-200 transform hover:scale-105"
-          >
-            <Download className="h-3 w-3 mr-1" />
-            Download
-          </a>
         </div>
       </div>
     );

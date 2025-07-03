@@ -97,12 +97,6 @@ const About: React.FC = () => {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl font-bold text-accent-600 mb-2">1500+</div>
-              <div className="text-xl font-semibold text-gray-900 mb-2">Alumni Network</div>
-              <p className="text-gray-600">Proud graduates making their mark in various fields worldwide</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="text-4xl font-bold text-green-600 mb-2">97%</div>
               <div className="text-xl font-semibold text-gray-900 mb-2">Success Rate</div>
               <p className="text-gray-600">Consistent academic excellence and university placements</p>

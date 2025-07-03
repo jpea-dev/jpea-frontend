@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/Home';

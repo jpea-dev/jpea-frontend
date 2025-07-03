@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleWhatsApp = (e: React.FormEvent) => {
+    e.preventDefault();
+    const { firstName, lastName, email, phone, subject, message } = form;
+    const text = 
+      `Contact Form Submission:%0A` +
+      `Name: ${firstName} ${lastName}%0A` +
+      `Email: ${email}%0A` +
+      `Phone: ${phone}%0A` +
+      `Subject: ${subject}%0A` +
+      `Message: ${message}`;
+    window.open(`https://wa.me/919450378136?text=${encodeURIComponent(text)}`, '_blank');
+  };
+
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -47,8 +73,7 @@ const Contact: React.FC = () => {
             <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
             <p className="text-gray-600">
               General: jpeducationacademyghj@gmail.com<br />
-              Admissions: jpeducationacademyghj@gmail.com<br />
-              Principal: ams04207@gmail.com
+              Principal: ams042017@gmail.com
             </p>
           </div>
 
@@ -58,7 +83,7 @@ const Contact: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Office Hours</h3>
             <p className="text-gray-600">
-              Monday - Saturday: 8:00 AM - 4:00 PM<br />
+              Mon - Sat: 8:00 AM - 4:00 PM<br />
               Sunday: Closed
             </p>
           </div>
@@ -69,7 +94,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="animate-slide-up">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleWhatsApp}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -78,6 +103,8 @@ const Contact: React.FC = () => {
                   <input
                     type="text"
                     id="firstName"
+                    value={form.firstName}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                     placeholder="Enter your first name"
                   />
@@ -89,6 +116,8 @@ const Contact: React.FC = () => {
                   <input
                     type="text"
                     id="lastName"
+                    value={form.lastName}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                     placeholder="Enter your last name"
                   />
@@ -102,6 +131,8 @@ const Contact: React.FC = () => {
                 <input
                   type="email"
                   id="email"
+                  value={form.email}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter your email address"
                 />
@@ -114,6 +145,8 @@ const Contact: React.FC = () => {
                 <input
                   type="tel"
                   id="phone"
+                  value={form.phone}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter your phone number"
                 />
@@ -125,6 +158,8 @@ const Contact: React.FC = () => {
                 </label>
                 <select
                   id="subject"
+                  value={form.subject}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Select a subject</option>
@@ -143,6 +178,8 @@ const Contact: React.FC = () => {
                 <textarea
                   id="message"
                   rows={6}
+                  value={form.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200"
                   placeholder="Enter your message here..."
                 ></textarea>
