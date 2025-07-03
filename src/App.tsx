@@ -12,6 +12,9 @@ import MandatoryDisclosure from './pages/MandatoryDisclosure';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Unauthorized from './pages/Unauthorized';
+import LandCertificate from './pages/LandCertificate';
+import TCSample from './pages/TCSample';
+import SelfAffidavit from './pages/SelfAffidavit';
 
 function App() {
   return (
@@ -59,6 +62,21 @@ function App() {
             <ProtectedRoute>
               <Dashboard />
             </ProtectedRoute>
+          } />
+          <Route path="/land-certificate" element={
+            <Layout>
+              <LandCertificate />
+            </Layout>
+          } />
+          <Route path="/tc-sample" element={
+            <Layout>
+              <TCSample />
+            </Layout>
+          } />
+          <Route path="/self-affidavit" element={
+            <Layout>
+              <SelfAffidavit />
+            </Layout>
           } />
         </Routes>
       </Router>
