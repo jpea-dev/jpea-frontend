@@ -25,7 +25,7 @@ const Header: React.FC = () => {
                   className="h-20 w-20 sm:h-20 sm:w-20 object-contain"/>
               </div>
               <div>
-                <h1 className="text-2xl sm:text-4xl lg:text-6xl font-display font-black text-primary-900 tracking-tight text-shadow-powerful">
+                <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-900 font-serif tracking-tight">
                   {siteConfig.site.name}
                 </h1>
                 <p className="text-sm sm:text-base text-primary-700 mt-1 font-serif font-medium tracking-wide text-elegant">
