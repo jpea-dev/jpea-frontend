@@ -47,13 +47,19 @@ const Header: React.FC = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-300 ${
+                    className={`px-4 py-2 text-sm font-semibold transition-all duration-300 relative group ${
                       isActive(item.href)
-                        ? 'bg-accent-500 text-white shadow-lg transform scale-105'
-                        : 'text-white hover:bg-accent-500 hover:text-white hover:shadow-md hover:transform hover:scale-105'
+                        ? 'text-accent-400'
+                        : 'text-white hover:text-accent-400'
                     }`}
                   >
                     {item.name}
+                    {/* Elegant underline effect */}
+                    <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent-400 transform transition-all duration-300 ${
+                      isActive(item.href) 
+                        ? 'scale-x-100' 
+                        : 'scale-x-0 group-hover:scale-x-100'
+                    }`}></span>
                   </Link>
                 ))}
                 
@@ -61,17 +67,19 @@ const Header: React.FC = () => {
                 {user ? (
                   <Link
                     to="/dashboard"
-                    className="ml-4 px-4 py-2 rounded-md text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-all duration-300 transform hover:scale-105"
+                    className="ml-4 px-4 py-2 text-sm font-semibold text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-300 relative group"
                   >
                     Dashboard
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></span>
                   </Link>
                 ) : (
                   <Link
                     to="/login"
-                    className="ml-4 flex items-center px-4 py-2 rounded-md text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-all duration-300 transform hover:scale-105"
+                    className="ml-4 flex items-center px-4 py-2 text-sm font-semibold text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-300 relative group"
                   >
                     <LogIn className="h-4 w-4 mr-2" />
                     Login
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></span>
                   </Link>
                 )}
               </div>
@@ -98,13 +106,18 @@ const Header: React.FC = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-all duration-200 ${
+                  className={`block px-3 py-2 text-base font-medium transition-all duration-200 relative group ${
                     isActive(item.href)
-                      ? 'bg-accent-500 text-white'
-                      : 'text-white hover:bg-accent-500 hover:text-white'
+                      ? 'text-accent-400'
+                      : 'text-white hover:text-accent-400'
                   }`}
                 >
                   {item.name}
+                  <span className={`absolute bottom-0 left-3 right-3 h-0.5 bg-accent-400 transform transition-all duration-300 ${
+                    isActive(item.href) 
+                      ? 'scale-x-100' 
+                      : 'scale-x-0 group-hover:scale-x-100'
+                  }`}></span>
                 </Link>
               ))}
               
@@ -113,18 +126,20 @@ const Header: React.FC = () => {
                 <Link
                   to="/dashboard"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium bg-accent-500 text-white hover:bg-accent-600 transition-all duration-200"
+                  className="block px-3 py-2 text-base font-medium text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-200 mx-3 mt-4 text-center relative group"
                 >
                   Dashboard
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></span>
                 </Link>
               ) : (
                 <Link
                   to="/login"
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center px-3 py-2 rounded-md text-base font-medium bg-accent-500 text-white hover:bg-accent-600 transition-all duration-200"
+                  className="flex items-center justify-center px-3 py-2 text-base font-medium text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-200 mx-3 mt-4 relative group"
                 >
                   <LogIn className="h-4 w-4 mr-2" />
                   Login
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></span>
                 </Link>
               )}
             </div>
