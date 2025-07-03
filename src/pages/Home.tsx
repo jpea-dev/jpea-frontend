@@ -14,10 +14,10 @@ const Home: React.FC = () => {
       <section className="bg-gradient-to-br from-primary-50 to-accent-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-primary-900 mb-4 animate-slide-up">
+            <h1 className="text-4xl md:text-6xl font-display font-black text-primary-900 mb-4 animate-slide-up tracking-tight text-shadow-powerful">
               Welcome to {siteConfig.site.name}
             </h1>
-            <p className="text-xl md:text-2xl text-primary-700 font-medium animate-fade-in mb-6">
+            <p className="text-xl md:text-2xl text-primary-700 font-serif font-medium animate-fade-in mb-6 tracking-wide text-elegant">
               {siteConfig.site.description}
             </p>
             
@@ -25,14 +25,14 @@ const Home: React.FC = () => {
             {user ? (
               <Link
                 to="/dashboard"
-                className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-accent-600 hover:bg-accent-700 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-subtle"
+                className="inline-flex items-center px-8 py-4 text-lg font-sans font-bold text-white bg-accent-600 hover:bg-accent-700 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-subtle tracking-wide"
               >
                 Go to Dashboard
               </Link>
             ) : (
               <Link
                 to="/login"
-                className="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-accent-600 hover:bg-accent-700 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-subtle"
+                className="inline-flex items-center px-8 py-4 text-lg font-sans font-bold text-white bg-accent-600 hover:bg-accent-700 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg animate-bounce-subtle tracking-wide"
               >
                 <LogIn className="h-6 w-6 mr-3" />
                 Student/Teacher Login
@@ -47,8 +47,8 @@ const Home: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Vision & Mission</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4 tracking-tight text-shadow-elegant">Our Vision & Mission</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-serif tracking-wide text-elegant">
               Dedicated to shaping future leaders through excellence in education and character development
             </p>
           </div>
@@ -67,8 +67,8 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 flex items-center justify-center p-8">
                   <div className="text-center text-white">
                     <Eye className="h-16 w-16 mx-auto mb-4 text-accent-300" />
-                    <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-                    <p className="text-lg leading-relaxed">
+                    <h3 className="text-2xl font-display font-bold mb-4 tracking-wide text-shadow-elegant">Our Vision</h3>
+                    <p className="text-lg leading-relaxed font-sans tracking-wide">
                       {siteConfig.visionMission.vision}
                     </p>
                   </div>
@@ -89,8 +89,8 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 flex items-center justify-center p-8">
                   <div className="text-center text-white">
                     <Target className="h-16 w-16 mx-auto mb-4 text-primary-300" />
-                    <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-                    <p className="text-lg leading-relaxed">
+                    <h3 className="text-2xl font-display font-bold mb-4 tracking-wide text-shadow-elegant">Our Mission</h3>
+                    <p className="text-lg leading-relaxed font-sans tracking-wide">
                       {siteConfig.visionMission.mission}
                     </p>
                   </div>
@@ -105,8 +105,8 @@ const Home: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Leadership Desk</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4 tracking-tight text-shadow-elegant">Leadership Desk</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-serif tracking-wide text-elegant">
               Meet our dedicated leadership team committed to educational excellence
             </p>
           </div>
@@ -122,16 +122,16 @@ const Home: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-lg font-bold">{siteConfig.leadership.president.name}</h4>
-                  <p className="text-sm opacity-90">{siteConfig.leadership.president.title}</p>
+                  <h4 className="text-lg font-display font-bold tracking-wide">{siteConfig.leadership.president.name}</h4>
+                  <p className="text-sm opacity-90 font-serif tracking-wide">{siteConfig.leadership.president.title}</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <Lightbulb className="h-8 w-8 text-green-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-900">President's Desk</h3>
+                  <h3 className="text-2xl font-display font-bold text-gray-900 tracking-wide">President's Desk</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 leading-relaxed text-sm font-serif tracking-wide text-elegant">
                   "{siteConfig.leadership.president.message}"
                 </p>
               </div>
@@ -147,16 +147,16 @@ const Home: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-lg font-bold">{siteConfig.leadership.manager.name}</h4>
-                  <p className="text-sm opacity-90">{siteConfig.leadership.manager.title}</p>
+                  <h4 className="text-lg font-display font-bold tracking-wide">{siteConfig.leadership.manager.name}</h4>
+                  <p className="text-sm opacity-90 font-serif tracking-wide">{siteConfig.leadership.manager.title}</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <Award className="h-8 w-8 text-accent-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-900">Manager's Desk</h3>
+                  <h3 className="text-2xl font-display font-bold text-gray-900 tracking-wide">Manager's Desk</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 leading-relaxed text-sm font-serif tracking-wide text-elegant">
                   "{siteConfig.leadership.manager.message}"
                 </p>
               </div>
@@ -172,16 +172,16 @@ const Home: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h4 className="text-lg font-bold">{siteConfig.leadership.principal.name}</h4>
-                  <p className="text-sm opacity-90">{siteConfig.leadership.principal.title}</p>
+                  <h4 className="text-lg font-display font-bold tracking-wide">{siteConfig.leadership.principal.name}</h4>
+                  <p className="text-sm opacity-90 font-serif tracking-wide">{siteConfig.leadership.principal.title}</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <Users className="h-8 w-8 text-primary-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-gray-900">Principal's Desk</h3>
+                  <h3 className="text-2xl font-display font-bold text-gray-900 tracking-wide">Principal's Desk</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 leading-relaxed text-sm font-serif tracking-wide text-elegant">
                   "{siteConfig.leadership.principal.message}"
                 </p>
               </div>
@@ -194,8 +194,8 @@ const Home: React.FC = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose {siteConfig.site.name}</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4 tracking-tight text-shadow-elegant">Why Choose {siteConfig.site.name}</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-serif tracking-wide text-elegant">
               Discover what makes us the preferred choice for quality education
             </p>
           </div>
@@ -205,24 +205,24 @@ const Home: React.FC = () => {
               <div className="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors duration-300">
                 <BookOpen className="h-10 w-10 text-primary-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Comprehensive Curriculum</h3>
-              <p className="text-gray-600">Well-structured academic programs aligned with national standards</p>
+              <h3 className="text-xl font-display font-bold text-gray-900 mb-2 tracking-wide">Comprehensive Curriculum</h3>
+              <p className="text-gray-600 font-sans tracking-wide">Well-structured academic programs aligned with national standards</p>
             </div>
 
             <div className="text-center group animate-fade-in">
               <div className="bg-accent-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-colors duration-300">
                 <Users className="h-10 w-10 text-accent-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Faculty</h3>
-              <p className="text-gray-600">Experienced and dedicated teachers committed to student success</p>
+              <h3 className="text-xl font-display font-bold text-gray-900 mb-2 tracking-wide">Expert Faculty</h3>
+              <p className="text-gray-600 font-sans tracking-wide">Experienced and dedicated teachers committed to student success</p>
             </div>
 
             <div className="text-center group animate-fade-in">
               <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors duration-300">
                 <Award className="h-10 w-10 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Excellence Recognition</h3>
-              <p className="text-gray-600">Consistently achieving outstanding academic and co-curricular results</p>
+              <h3 className="text-xl font-display font-bold text-gray-900 mb-2 tracking-wide">Excellence Recognition</h3>
+              <p className="text-gray-600 font-sans tracking-wide">Consistently achieving outstanding academic and co-curricular results</p>
             </div>
           </div>
         </div>

@@ -1,3 +1,138 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Enhanced Typography Base Styles */
+@layer base {
+  html {
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply font-sans text-base text-gray-900 leading-relaxed;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  /* Elegant heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight;
+    font-weight: 800;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight;
+    font-weight: 700;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl leading-snug tracking-wide;
+    font-weight: 600;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl leading-snug tracking-wide;
+    font-weight: 600;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl lg:text-2xl leading-normal tracking-wide;
+    font-weight: 500;
+  }
+
+  h6 {
+    @apply text-base md:text-lg lg:text-xl leading-normal tracking-wide;
+    font-weight: 500;
+  }
+
+  /* Enhanced paragraph styles */
+  p {
+    @apply leading-relaxed tracking-wide;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "onum" 1;
+  }
+
+  /* Elegant quote styles */
+  blockquote {
+    @apply font-serif italic text-lg leading-relaxed tracking-wide;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
+  }
+
+  /* Enhanced link styles */
+  a {
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Button typography */
+  button {
+    @apply font-sans font-semibold tracking-wide;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Form elements */
+  input, textarea, select {
+    @apply font-sans tracking-wide;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Table typography */
+  table {
+    font-feature-settings: "kern" 1, "liga" 1, "tnum" 1, "lnum" 1;
+  }
+}
+
+/* Custom Typography Utilities */
+@layer utilities {
+  .text-luxury {
+    @apply tracking-luxury;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  }
+
+  .text-elegant {
+    @apply font-serif tracking-wide;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
+  }
+
+  .text-powerful {
+    @apply font-display font-bold tracking-tight;
+    font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
+  }
+
+  .text-refined {
+    @apply font-sans tracking-wide;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+
+  /* Enhanced text shadows for luxury feel */
+  .text-shadow-elegant {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-powerful {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Gradient text effects */
+  .text-gradient-elegant {
+    @apply bg-gradient-to-r from-primary-600 via-primary-700 to-accent-600 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-luxury {
+    @apply bg-gradient-to-r from-accent-600 via-primary-600 to-accent-700 bg-clip-text text-transparent;
+  }
+}
+
+/* Enhanced focus styles */
+@layer components {
+  .focus-elegant:focus {
+    @apply outline-none ring-2 ring-primary-500 ring-opacity-50;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  }
+}

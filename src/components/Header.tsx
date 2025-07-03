@@ -25,10 +25,10 @@ const Header: React.FC = () => {
                   className="h-20 w-20 sm:h-20 sm:w-20 object-contain"/>
               </div>
               <div>
-                <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold text-primary-900 font-serif tracking-tight">
+                <h1 className="text-2xl sm:text-4xl lg:text-6xl font-display font-black text-primary-900 tracking-tight text-shadow-powerful">
                   {siteConfig.site.name}
                 </h1>
-                <p className="text-sm sm:text-base text-primary-700 mt-1 font-medium">
+                <p className="text-sm sm:text-base text-primary-700 mt-1 font-serif font-medium tracking-wide text-elegant">
                   {siteConfig.site.tagline}
                 </p>
               </div>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`px-4 py-2 text-sm font-semibold transition-all duration-300 relative group ${
+                    className={`px-4 py-2 text-sm font-sans font-semibold tracking-wide transition-all duration-300 relative group ${
                       isActive(item.href)
                         ? 'text-accent-400'
                         : 'text-white hover:text-accent-400'
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                 {user ? (
                   <Link
                     to="/dashboard"
-                    className="ml-4 px-4 py-2 text-sm font-semibold text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-300 relative group"
+                    className="ml-4 px-4 py-2 text-sm font-sans font-semibold tracking-wide text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-300 relative group"
                   >
                     Dashboard
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></span>
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
                 ) : (
                   <Link
                     to="/login"
-                    className="ml-4 flex items-center px-4 py-2 text-sm font-semibold text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-300 relative group"
+                    className="ml-4 flex items-center px-4 py-2 text-sm font-sans font-semibold tracking-wide text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-300 relative group"
                   >
                     <LogIn className="h-4 w-4 mr-2" />
                     Login
@@ -106,7 +106,7 @@ const Header: React.FC = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-all duration-200 relative group ${
+                  className={`block px-3 py-2 text-base font-sans font-medium tracking-wide transition-all duration-200 relative group ${
                     isActive(item.href)
                       ? 'text-accent-400'
                       : 'text-white hover:text-accent-400'
@@ -126,7 +126,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/dashboard"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-3 py-2 text-base font-medium text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-200 mx-3 mt-4 text-center relative group"
+                  className="block px-3 py-2 text-base font-sans font-medium tracking-wide text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-200 mx-3 mt-4 text-center relative group"
                 >
                   Dashboard
                   <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-all duration-300"></span>
@@ -135,7 +135,7 @@ const Header: React.FC = () => {
                 <Link
                   to="/login"
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-center px-3 py-2 text-base font-medium text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-200 mx-3 mt-4 relative group"
+                  className="flex items-center justify-center px-3 py-2 text-base font-sans font-medium tracking-wide text-white border border-accent-400 hover:text-accent-400 hover:border-accent-300 transition-all duration-200 mx-3 mt-4 relative group"
                 >
                   <LogIn className="h-4 w-4 mr-2" />
                   Login
