@@ -140,7 +140,13 @@ const SchoolCertificates: React.FC = () => {
                     href={selectedCert.pdfPath}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white ${getColorClasses(selectedCert.color, 'text').replace('text-', 'bg-')} hover:opacity-90 transition-all duration-300 transform hover:scale-105`}
+                    className={`inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white ${
+                      selectedCert.color === 'blue'
+                        ? 'bg-blue-600'
+                        : selectedCert.color === 'purple'
+                        ? 'bg-purple-600'
+                        : getColorClasses(selectedCert.color, 'text').replace('text-', 'bg-')
+                    } shadow-lg hover:opacity-90 transition-all duration-300`}
                   >
                     <Eye className="h-4 w-4 mr-2" />
                     View in New Tab
@@ -182,7 +188,7 @@ const SchoolCertificates: React.FC = () => {
                         href={selectedCert.pdfPath}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white ${getColorClasses(selectedCert.color, 'text').replace('text-', 'bg-')} hover:opacity-90 transition-all duration-300`}
+                        className={`inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white ${getColorClasses(selectedCert.color, 'text').replace('text-', 'bg-')} shadow-lg hover:opacity-90 transition-all duration-300`}
                       >
                         <Eye className="h-5 w-5 mr-2" />
                         View PDF

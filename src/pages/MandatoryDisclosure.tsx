@@ -226,7 +226,7 @@ const MandatoryDisclosure: React.FC = () => {
                       </div>
                       <div>
                         <div className="font-semibold text-gray-900">Mr. Rahul Kumar</div>
-                        <div className="text-sm text-gray-600">M.A. B.Ed. (Special Ed.)</div>
+                        <div className="text-sm text-gray-600">M.A. B.Ed. (Special Educator)</div>
                       </div>
                     </div>
                   </td>
