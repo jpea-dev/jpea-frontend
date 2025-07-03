@@ -358,9 +358,7 @@ export const siteConfig = {
     { name: 'Admissions', href: '/admissions' },
     { name: 'Contact', href: '/contact' },
     { name: 'Mandatory Public Disclosure', href: '/mandatory-disclosure' },
-    { name: 'Transfer Certificate Sample', href: '/tc-sample' },
-    { name: 'Land Certificate', href: '/land-certificate' },
-    { name: 'Self Affidavit', href: '/self_affidavit.pdf'},
+    { name: 'School Certificates', href: '/school-certificates' }
   ],
 
   // Footer Links
