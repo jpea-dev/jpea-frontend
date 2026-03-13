@@ -4,7 +4,7 @@
 export const siteConfig = {
   // Basic Site Information
   site: {
-    name: "J.P. EDUCATION ACADEMY",
+    name: "J.P. Education Academy",
     tagline: "Excellence in Education Since Foundation",
     description: "Empowering students with knowledge and excellence since our foundation",
     domain: "www.jpeducationacademy.in",
