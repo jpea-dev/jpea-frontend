@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Download, AlertCircle, CheckCircle } from 'lucide-react';
+import { Search, Download, AlertCircle, CheckCircle, ZoomIn, ZoomOut, X, Maximize2 } from 'lucide-react';
 import transferCertificatesData from '../data/transferCertificates.json';
 
 interface TransferCertificate {
@@ -14,6 +14,8 @@ const TransferCertificates: React.FC = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<TransferCertificate | null>(null);
   const [hasSearched, setHasSearched] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [zoom, setZoom] = useState<number>(1);
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -42,6 +44,22 @@ const TransferCertificates: React.FC = () => {
     setSelectedCertificate(null);
     setHasSearched(false);
     setError('');
+    setIsFullscreen(false);
+    setZoom(1);
+  };
+
+  const handleZoom = (factor: number) => {
+    setZoom((prev) => Math.max(0.5, Math.min(prev + factor, 3)));
+  };
+
+  const openFullscreen = () => {
+    setIsFullscreen(true);
+    setZoom(1);
+  };
+
+  const closeFullscreen = () => {
+    setIsFullscreen(false);
+    setZoom(1);
   };
 
   return (
@@ -138,16 +156,47 @@ const TransferCertificates: React.FC = () => {
                     <label className="text-sm font-semibold text-gray-500 uppercase mb-4 block">
                       Certificate Preview
                     </label>
-                    <div className="bg-gray-100 rounded-lg overflow-hidden border-2 border-gray-200">
-                      <img
-                        src={selectedCertificate.certificateUrl}
-                        alt={`Transfer Certificate - ${selectedCertificate.name}`}
-                        className="w-full h-auto object-cover max-h-96"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="%23888" text-anchor="middle" dy=".3em"%3EImage not available%3C/text%3E%3C/svg%3E';
-                        }}
-                      />
+                    <div className="bg-gray-100 rounded-lg overflow-hidden border-2 border-gray-200 relative">
+                      <div className="flex items-center justify-between mb-3 p-3 bg-gray-50 border-b border-gray-200">
+                        <div className="flex items-center gap-2">
+                          <button
+                            onClick={() => handleZoom(-0.2)}
+                            className="p-2 hover:bg-gray-300 rounded-lg transition-colors"
+                            title="Zoom Out"
+                          >
+                            <ZoomOut className="h-5 w-5 text-gray-700" />
+                          </button>
+                          <span className="text-sm font-semibold text-gray-700 min-w-12 text-center">
+                            {Math.round(zoom * 100)}%
+                          </span>
+                          <button
+                            onClick={() => handleZoom(0.2)}
+                            className="p-2 hover:bg-gray-300 rounded-lg transition-colors"
+                            title="Zoom In"
+                          >
+                            <ZoomIn className="h-5 w-5 text-gray-700" />
+                          </button>
+                        </div>
+                        <button
+                          onClick={openFullscreen}
+                          className="p-2 hover:bg-gray-300 rounded-lg transition-colors"
+                          title="Fullscreen"
+                        >
+                          <Maximize2 className="h-5 w-5 text-gray-700" />
+                        </button>
+                      </div>
+                      <div className="overflow-auto max-h-96 flex items-center justify-center bg-gray-200">
+                        <img
+                          src={selectedCertificate.certificateUrl}
+                          alt={`Transfer Certificate - ${selectedCertificate.name}`}
+                          className="object-contain transition-transform duration-200"
+                          style={{ transform: `scale(${zoom})` }}
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="%23888" text-anchor="middle" dy=".3em"%3EImage not available%3C/text%3E%3C/svg%3E';
+                          }}
+                        />
+                      </div>
                     </div>
                     <p className="text-sm text-gray-500 mt-3">
                       If the image is not loading, use the download button below to access your certificate
@@ -206,6 +255,55 @@ const TransferCertificates: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Fullscreen Modal */}
+      {isFullscreen && selectedCertificate && (
+        <div className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center p-4">
+          {/* Header with Controls */}
+          <div className="w-full max-w-6xl flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => handleZoom(-0.2)}
+                className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
+                title="Zoom Out"
+              >
+                <ZoomOut className="h-6 w-6 text-white" />
+              </button>
+              <span className="text-white font-semibold min-w-16 text-center">
+                {Math.round(zoom * 100)}%
+              </span>
+              <button
+                onClick={() => handleZoom(0.2)}
+                className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
+                title="Zoom In"
+              >
+                <ZoomIn className="h-6 w-6 text-white" />
+              </button>
+            </div>
+            <button
+              onClick={closeFullscreen}
+              className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
+              title="Close"
+            >
+              <X className="h-6 w-6 text-white" />
+            </button>
+          </div>
+
+          {/* Image Container */}
+          <div className="w-full max-w-6xl h-full overflow-auto flex items-center justify-center bg-black rounded-lg">
+            <img
+              src={selectedCertificate.certificateUrl}
+              alt={`Transfer Certificate - ${selectedCertificate.name}`}
+              className="object-contain"
+              style={{ transform: `scale(${zoom})` }}
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" font-size="18" fill="%23888" text-anchor="middle" dy=".3em"%3EImage not available%3C/text%3E%3C/svg%3E';
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
