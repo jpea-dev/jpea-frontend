@@ -89,7 +89,7 @@ const TransferCertificates: React.FC = () => {
                 <input
                   type="text"
                   id="admissionNo"
-                  placeholder="e.g., ADM001"
+                  placeholder="Enter admission number here"
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                   className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors duration-200"
