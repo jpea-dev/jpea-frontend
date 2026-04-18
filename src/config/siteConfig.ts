@@ -358,7 +358,8 @@ export const siteConfig = {
     { name: 'Admissions', href: '/admissions' },
     { name: 'Contact', href: '/contact' },
     { name: 'Mandatory Public Disclosure', href: '/mandatory-disclosure' },
-    { name: 'School Certificates', href: '/school-certificates' }
+    { name: 'School Certificates', href: '/school-certificates' },
+    { name: 'Transfer Certificates', href: '/transfer-certificates' }
   ],
 
   // Footer Links

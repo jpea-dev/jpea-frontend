@@ -11,6 +11,7 @@ import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 import MandatoryDisclosure from './pages/MandatoryDisclosure';
 import SchoolCertificates from './pages/SchoolCertificates';
+import TransferCertificates from './pages/TransferCertificates';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Unauthorized from './pages/Unauthorized';
@@ -54,6 +55,11 @@ function App() {
           <Route path="/school-certificates" element={
             <Layout>
               <SchoolCertificates />
+            </Layout>
+          } />
+          <Route path="/transfer-certificates" element={
+            <Layout>
+              <TransferCertificates />
             </Layout>
           } />
           
