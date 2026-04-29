@@ -45,6 +45,14 @@ const SchoolCertificates: React.FC = () => {
       pdfPath: '/self_affidavit.pdf',
       icon: Shield,
       color: 'purple'
+    },
+        {
+      id: 'books-list',
+      name: 'Books List',
+      description: 'School books list and curriculum documentation',
+      pdfPath: 'https://ik.imagekit.io/jpeaghj/docs/books_list.pdf?updatedAt=1777450157006',
+      icon: Shield,
+      color: 'purple'
     }
   ];
 
