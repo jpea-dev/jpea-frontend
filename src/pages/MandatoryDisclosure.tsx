@@ -385,7 +385,7 @@ const MandatoryDisclosure: React.FC = () => {
                   </td>
                   <td className={cellStyle}>
                     <a 
-                      href="https://www.youtube.com/watch?v=i91PFqpKOUE" 
+                      href="https://youtu.be/_LsN1ZjQAbI?si=b1XnvEdOfQzhHlj7" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-red-500 to-red-600 border border-red-600 rounded-lg hover:from-red-600 hover:to-red-700 transition-all duration-200 transform hover:scale-105 shadow-lg"
